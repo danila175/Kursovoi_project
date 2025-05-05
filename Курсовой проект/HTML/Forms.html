@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="../CSS_SCSS/Forms.css">
+</head>
+<body>
+  <header class="head">
+    <img class="img" src="../Images/test.svg" alt="Иконка" width="20" height="20">
+    <img class="logo" src="../Images/logo.svg" alt="Логотип" width="20" height="20">
+    <label for="menu-toggle" class="menu-label">☰</label>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <div class="menu-content">
+      <a href="../HTML/Main.html"><div>Главная страница</div></a>
+      <a href="../HTML/Card.html"><div>Оформить карту</div></a>
+      <a href="../HTML/Forms.html"><div>Регистрация</div></a>
+    </div>
+  </header>
+  <div class="container">
+    <header class="title"><h2>Спасибо что выбрали нас!</h2></header>
+
+    <div class="cards">
+      <div class="card" style="background-image: url(../Images/worker3.jpg);"></div>
+      <div class="card" style="background-image: url(../Images/worker2.jpg);"></div>
+      <div class="card" style="background-image: url(../Images/worker1.jpg);"></div>
+    </div>
+
+    <div class="section">
+      <div class="title"><h3>Для регистрации пользователя заполните форму ниже</h3></div>
+      <form>
+        <h2 style="color: aliceblue;">Регистрация пользователя</h2>
+        <div class="formdiv"><label>ФИО:</label><input type="text"/></div>
+        <div class="formdiv"><label>Серия паспорта:</label><input type="text"/></div>
+        <div class="formdiv"><label>Номер паспорта:</label><input type="text"/></div>
+        <div class="formdiv"><label>Дата рождения:</label><input type="text"/></div>
+        <div class="formdiv">
+          <label>Пол:</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox"/> Мужской</label>
+            <label><input type="checkbox"/> Женский</label>
+            <label><input type="checkbox"/> Не определен</label>
+          </div>
+        </div>
+        <div class="formdiv"><label>Email:</label><input type="email"/></div>
+        <div class="formdiv"><label>Страна проживания:</label><input type="text"/></div>
+        <div class="formdiv"><label>Откуда вы узнали про нас:</label><select><option value="1">Выберите варинт</option><option value="2">Друзья/родственники</option><option value="4">Сайт</option><option value="1">Другое</option></select></div>
+        <div class="formdiv"><label>Дата заполнения:</label><input type="date" value="дд.мм.гггг"/></div>
+        <div class="formdiv"><label></label><input type="submit" value="Регистрация" /><input type="button" value="Отмена" /></div>
+       </form>
+    </div>
+
+    <div class="section">
+      <div class="title"><h3>Для возможности трудоустроиться в нашей компании заполните форму ниже</h3></div>
+      <form>
+        <h2 style="color: aliceblue;">Анкета трудоустройсва</h2>
+        <div class="formdiv"><label>ФИО:</label><input type="text"/></div>
+        <div class="formdiv"><label>Специальность:</label><input type="text"/></div>
+        <div class="formdiv"><label>Стаж работы:</label><input type="text"/></div>
+        <div class="formdiv">
+          <label>Занятость:</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox"/> Полная</label>
+            <label><input type="checkbox"/> Частичная</label>
+          </div>
+        </div>
+        <div class="formdiv">
+          <label>Пол:</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox"/> Мужской</label>
+            <label><input type="checkbox"/> Женский</label>
+            <label><input type="checkbox"/> Не определен</label>
+          </div>
+        </div>
+        <div class="formdiv"><label>Email:</label><input type="email"/></div>
+        <div class="formdiv"><label>Страна проживания:</label><input type="text"/></div>
+        <div class="formdiv"><label>Дата заполнения:</label><input type="date" value="дд.мм.гггг"/></div>
+        <div class="formdiv"><label></label><input type="submit" value="Регистрация" /><input type="button" value="Отмена" /></div>
+       </form>
+    </div>
+  </div>
+  <footer class="footer" style="color: gray;">
+    Сайт сделал, оформил, спроектировал и разработал учащийся БГТУ, ФИТ, 1 курс, 8 группа Мартыненко Данила Александрович, данные на этом сайте не являются подленными, существующие только для создания курсовой работы. Рабочая почта: chav0togo@gmail.com; <a href="https://github.com/danila175/MoneyGo.git" id="repo">ссылка на репозиторий</a>.
+  </footer>
+</body>
+</html>
