@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="../CSS_SCSS/Main.css">
+  <script src="../JavaScript/calculator.js"></script>
+</head>
+<body>
+  <header class="head">
+    <img class="img" src="../Images/test.svg" alt="Иконка" width="20" height="20">
+    <img class="logo" src="../Images/logo.svg" alt="Логотип" width="20" height="20">
+    <label for="menu-toggle" class="menu-label">☰</label>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <div class="menu-content">
+      <a href="../HTML/Main.html"><div>Главная страница</div></a>
+      <a href="../HTML/Card.html"><div>Оформить карту</div></a>
+      <a href="../HTML/Forms.html"><div>Регистрация</div></a>
+    </div>
+  </header>
+  <section class="links-section">
+    <div class="link-block">
+      <h1>ОФОРМИ КАРТУ БАНКА ЗА 5 МИНУТ</h1>
+      <p>Комиссия 1%, кэшбек во множестве сервисов 20% и многое другое!</p>
+      <a href="../HTML/Card.html"><div class="img-placeholder" style="background-image: url(../Images/Plain-card_edited.jpg); background-repeat: no-repeat; background-size: cover; height: 200px;"></div></a>
+    </div>
+    <div class="link-block">
+      <h1>СТАНЬ УЧАСТНИКОМ БАНКА И ПОЛУЧИ 5$ БЕСЛПАТНО!</h1>
+      <p>Участникам банка пологается множество акций и привелегий в оформлении кредита</p>
+      <a href="../HTML/Forms.html#form1"><div class="img-placeholder" style="background-image: url(../Images/goonman_edited.png); background-repeat: no-repeat; background-size: cover; height: 200px;"></div></a>
+    </div>
+    <div class="link-block">
+        <h1>НАМ НУЖНЫ ТАКИЕ СОТРУДНИКИ, КАК ТЫ!</h1>
+      <p>Заполняй форму, становись работником банка, позволь своим мечтам исполниться</p>
+      <a href="../HTML/Forms.html#form2"><div class="img-placeholder" style="background-image: url(../Images/typing_edited.png); background-repeat: no-repeat; background-size: cover; height: 200px;"></div></a>
+    </div>
+  </section>
+  <h2 class="title" style="background-color: #333; margin-left: 3%;">Почему именно мы?</h2>
+  <section class="text-cards">
+    <div class="text-box">Нам доверились такие люди как: Илон Маск, Билл Гейтс, Мистер Бист, Маркус Персон, Анатолий Фоменко, Дональд Дак, Хакита Патала, Гордон Фримен, и конечно же более 2 млрд людей и 3 тыс компаний на всей планете и за ее пределами. Покажите миру, что вы достойны войти в современный поток технологий!</div>
+    <div class="text-box">Мы предлагаем минимальные комиссии на переводы и обслуживание счетов. С нами вы можете быть уверены, что ваши финансовые операции будут выгодными и без скрытых платежей. На нас работает множество компаний по кибербезопасности, которые обеспечивают вам сладкий сон в мире Интернета.</div>
+    <div class="text-box">В нашем банке каждый клиент важен. Мы предоставляем персональные консультации и помогаем разобраться в финансовых вопросах, предлагая оптимальные решения для вашего бюджета. Наша поддержка работает круглосуточно, и готова ответить вам в любой удобный вам момент!</div>
+  </section>
+  <div class="info-section">
+    <div class="charts">
+      <p>Курс Доллара</p>
+      <img src="../Images/DollarCurs.png" alt="Курс доллара">
+      <p>Курс Евро</p>
+      <img src="../Images/EuroCurs.png" alt="Курс евро">
+    </div>
+    <section class="calculator">
+      <h2>Калькулятор конверсии валют</h2>
+      <label for="amount">Введите сумму:</label>
+      <input type="number" id="amount" placeholder="Сумма">
+      <label for="direction">Выберите направление:</label>
+      <select id="direction">
+        <option value="to">Из BYN в валюту</option>
+        <option value="from">Из валюты в BYN</option>
+      </select>
+      <label for="currency">Выберите валюту:</label>
+      <select id="currency">
+        <option value="usd">Доллары США (USD)</option>
+        <option value="rub">Русские рубли (RUB)</option>
+        <option value="eur">Евро (EUR)</option>
+      </select>
+      <div id="custom-rate-container" style="display:none;">
+        <label for="custom-rate">Введите коэффициент для своей валюты:</label>
+        <input type="number" id="custom-rate" placeholder="Коэффициент">
+      </div>
+      <button onclick="convertCurrency()">Конвертировать</button>
+      <div class="result" id="result"></div>
+    </section>
+  </div>
+  <h2 class="title" style="margin-left: 3%; background-color: #333; color: aliceblue;">Новостной отдел</h2>
+
+  <section class="media-block">
+    <div class="big-img" style="background-color: #333; color: aliceblue;">За последние недели курс валют значтельно ранжируется, с каждым днем меняя свое значение на абсолютно отличное от предыдущего (от 1.5% до 5% за день). К сожалению наша компания на данный момент не может дать конкретных прогнозов на текущий период времени. Затронутыми валютами являются Доллар, Евро. Однако за неименеием возмонжости быстро подстраиваться под мировой рынок, белорусский рубль и российский рубль относитлеьно стабильны на протяжении этого времени. Наши специалисты уже боряться за возмонжость выйти на мировой рынок с выгодной для нас валютой из-за ее низкой стоимости. Пока что сообщается, что выход на рынок возможен при стабилизации иностранных валют, дабы примкнуть к нашему рынку, поскольку их нестабильность вызывет случайные инфляционные взлеты.</div>
+    <div class="small-imgs">
+      <div class="small-img" style="background-color: #333; color: aliceblue; margin-bottom: 30px;">С 19.04.2025 наша компания занесена в книгу рекордов гиннесса за наибольшее количество пользователей одноврменно (100 тысяч) и на постоянной основе (2 миллиарда)! Мы благодарны Вам за проделанную работу.</div>
+      <div class="small-img" style="background-color: #333; color: aliceblue;">Недвано была побеждена последняя уявзимость, способная обрушить систему заморозки транзакций, из-за которой пользователи получали переводы на пару минут дольше, чем получали бы без уязвимости. Вы в безопасности!</div>
+    </div>
+  </section>
+
+  <footer class="footer" style="color: gray;">
+    gettfoutofhere.
+  </footer>
+
+</body>
+</html>
